@@ -1,7 +1,7 @@
-﻿using SeyKol.Library.ProcessHelper;
-using SeyKol.StudyAnalysis.Library.Interface;
+﻿using SeyKol.StudyAnalysis.Library.Interface;
+using SeyKol.StudyAnalysis.Library.ProcessHelper;
 
-namespace SeyKol.Library.Process
+namespace SeyKol.StudyAnalysis.Library.Process
 {
     public class LogProcess
     {

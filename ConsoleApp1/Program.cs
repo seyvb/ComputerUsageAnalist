@@ -1,8 +1,9 @@
 ﻿using ConsoleApp1.Process;
 using System;
 using System.Timers;
-using SeyKol.Library.Process;
-using SeyKol.Library.ProcessHelper;
+using SeyKol.StudyAnalysis.Library.Process;
+
+
 namespace ConsoleApp1
 {
     class Program
@@ -11,11 +12,13 @@ namespace ConsoleApp1
         {
             var trace = ComputerTraceProcess.CreateComputerTrace();
             var log = new LogProcess().log;
+            var textFile = new StudyProcess().study;
 
             var t = new Timer(1000);
             t.Start();
             t.Elapsed += delegate
             {
+                t.Stop();
                 try
                 {
 
@@ -29,16 +32,21 @@ namespace ConsoleApp1
                     ////Console.WriteLine(GetLastUserInput.GetLastUserInput.GetLastInputTime());
                     ////Console.WriteLine(GetLastUserInput.GetIdleTickCount());
 
-                    string msj = $"Last : {trace.GetLastInputTime()},MiliSecond : {trace.GetIdleTime()}";
+                    var msj = $"Last : {trace.GetLastInputTime()},MiliSecond : {trace.GetIdleTime()}";
 
                     Console.WriteLine(msj);
-                    log.WriteLog(msj); 
+                    log.WriteLog(msj);
+
+                    textFile.WriteDetail("test.txt", $"Merhaba Dünya {DateTime.Now.Millisecond}");
                 }
                 catch (Exception e)
                 {
                     Console.WriteLine(e);
                 }
-                
+                finally
+                {
+                    t.Start();
+                }
             };
             Console.ReadLine();
         }

@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using NLog;
+﻿using NLog;
 using SeyKol.StudyAnalysis.Library.Interface;
 
-namespace SeyKol.Library.ProcessHelper
+namespace SeyKol.StudyAnalysis.Library.ProcessHelper
 {
     public class NLogger: ILog
     {

@@ -7,8 +7,8 @@
     <ProjectGuid>{628A6321-B6C5-42CB-8E6B-A1C25BCBCA4A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SeyKol.Library</RootNamespace>
-    <AssemblyName>SeyKol.Library</AssemblyName>
+    <RootNamespace>SeyKol.StudyAnalysis.Library</RootNamespace>
+    <AssemblyName>SeyKol.StudyAnalysis.Library</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -51,20 +51,27 @@
   <ItemGroup>
     <Compile Include="Interface\IComputerTrace.cs" />
     <Compile Include="Interface\ILog.cs" />
+    <Compile Include="Interface\IStudy.cs" />
+    <Compile Include="Manager\FileManager.cs" />
     <Compile Include="ProcessHelper\GetLastUserInput.cs" />
     <Compile Include="ProcessHelper\NLogger.cs" />
+    <Compile Include="ProcessHelper\Study_TextFile.cs" />
     <Compile Include="Process\ComputerTraceProcess.cs" />
     <Compile Include="Process\LogProcess.cs" />
+    <Compile Include="Process\StudyProcess.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Setting.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="NLog.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="App.config" />
     <None Include="NLog.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
