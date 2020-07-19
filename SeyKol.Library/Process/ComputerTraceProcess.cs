@@ -13,7 +13,7 @@ namespace SeyKol.StudyAnalysis.Library.Process
         //Hangi yöntemin kullanılacağı belirleniyor.
         public static IComputerTrace CreateComputerTrace()
         {
-            IComputerTrace retVal = new GetLastUserInput.LastUserInput();
+            IComputerTrace retVal = new LastUserInput();
 
             return retVal;
         }

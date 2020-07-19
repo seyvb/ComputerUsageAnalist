@@ -52,6 +52,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\SeyKol.Library\SeyKol.StudyAnalysis.Library.csproj">
+      <Project>{628a6321-b6c5-42cb-8e6b-a1c25bcbca4a}</Project>
+      <Name>SeyKol.StudyAnalysis.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
