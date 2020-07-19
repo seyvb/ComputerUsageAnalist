@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{DEFD8998-30BD-409F-9F94-2A6A5D6133B8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeyKol.Service.Main", "SeyKol.Service.Main\SeyKol.Service.Main.csproj", "{CD120CEB-4686-4D73-A23D-883391986730}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeyKol.StudyAnalysis.Library", "SeyKol.Library\SeyKol.StudyAnalysis.Library.csproj", "{628A6321-B6C5-42CB-8E6B-A1C25BCBCA4A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{DEFD8998-30BD-409F-9F94-2A6A5D6133B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DEFD8998-30BD-409F-9F94-2A6A5D6133B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DEFD8998-30BD-409F-9F94-2A6A5D6133B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD120CEB-4686-4D73-A23D-883391986730}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD120CEB-4686-4D73-A23D-883391986730}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD120CEB-4686-4D73-A23D-883391986730}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD120CEB-4686-4D73-A23D-883391986730}.Release|Any CPU.Build.0 = Release|Any CPU
+		{628A6321-B6C5-42CB-8E6B-A1C25BCBCA4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{628A6321-B6C5-42CB-8E6B-A1C25BCBCA4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{628A6321-B6C5-42CB-8E6B-A1C25BCBCA4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{628A6321-B6C5-42CB-8E6B-A1C25BCBCA4A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
